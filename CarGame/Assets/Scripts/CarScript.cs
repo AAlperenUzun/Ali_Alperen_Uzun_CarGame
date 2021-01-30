@@ -5,8 +5,8 @@ using UnityEngine;
 public class CarScript : MonoBehaviour
 {
     private new Rigidbody2D rigidbody2D;
-    private float speed;
-    private float rotationSpeed;
+    public float speed;
+    public float rotationSpeed;
     private int index;
     public bool isPlayable;
     private bool endReplay;
@@ -21,8 +21,6 @@ public class CarScript : MonoBehaviour
         endReplay = false;
         isPlayable = false;
         index = 0;
-        speed = 2f;
-        rotationSpeed = 5f;
         rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
 
         pointsInTime = new List<PointInTime>();
